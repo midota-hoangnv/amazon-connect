@@ -35,7 +35,7 @@ export default {
         window,
         document,
         "amazon_connect",
-        "fd62e03a-c7bb-40ba-9696-d1c9cecb124a"
+        "beffd482-e513-4b2b-aac5-aa67e6ca3314"
       );
       amazon_connect("styles", {
         iconType: "VOICE",
@@ -44,23 +44,53 @@ export default {
       });
       amazon_connect(
         "snippetId",
-        "QVFJREFIaDJSeExmZC9mdkhGcGpyYSs4Zm9SMXpVL2FlMFF2aEpVbzNKb3oyNCtZekFGTmJOV2FUMUVBZm81RjJNU3h4L2NSQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNQnlBb1pPZGdZUGU1bXIrREFnRVFnQ3RvU1VkZ2l3OHUyVnBid2R0UkxlVjEzYlcrV1NlY1FIWXJiS0s0TDMybnpmdk4ySSsrenhPbWJmeis6OlI1b09wc2xkaVVhUVRrdUtqbFV6d0hxUEk5VlU4M2JEWW5XdDlBRnRRdkMxREdJRlZEVVgreHlsejNJR3VHR1JPNm1sWWlSVW56MlVXMHNFZmZkbFlKMWRCdjM5OVl0ODBXUUlhbHlnaXVLQWEvMVNFYisxT3I1dmt0a0xtTFEvYXgzR0cwK2hYTUUrbFdsa2xPYVd5TlQ5Z290M3ZxWT0="
+        "QVFJREFIakNnb2I4UUFhMXdNbmZJdnEvYXJSclVQTEk0eUtlQjYvUkZmQ2Q5NU1hSWdGUnYvRmp3MGREZnp4R0V5UDVLVlFhQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNM2VQQzhVU3lJdys4RnhXYkFnRVFnQ3NWZ2ovOXZDZjEzcG9GbGI0NDVxNWd3Q0hqcmVIaHYrNEIyMUJUdzVMa1FBbXVycFRQQ1VBRCs5d0w6Om5wVmxZQmh3VFRlQjkzb1MrWkx1ZzFlMTMwUDhSZVYwRHZJbVBpdVVHWTBKVWYzZXd0aGREMWFQa2xaM2tNQWx2ZXpDOTFXMVhOaHRIeHZIbS9vV0JvMlFMdHBMb1JTMVRiZkJpNlptY0VLMDBQSkhBWTFvN1FCSGY1amV4MVVMd0dGMkdHUmFXcjZQTGVQSE5nT1FuNmlYd1AyOHB6az0="
       );
-      amazon_connect("supportedMessagingContentTypes", [
-        "text/plain",
-        "text/markdown",
-      ]);
+
+      // (function(w, d, x, id) {
+      //   var s = d.createElement("script");
+      //   s.src =
+      //     "https://d1nv5i00u1m742.cloudfront.net/amazon-connect-chat-interface-client.js";
+      //   s.async = 1;
+      //   s.id = id;
+      //   d.getElementsByTagName("head")[0].appendChild(s);
+      //   w[x] =
+      //     w[x] ||
+      //     function() {
+      //       (w[x].ac = w[x].ac || []).push(arguments);
+      //     };
+      // })(
+      //   window,
+      //   document,
+      //   "amazon_connect",
+      //   "beffd482-e513-4b2b-aac5-aa67e6ca3314"
+      // );
+      // amazon_connect("styles", {
+      //   iconType: "VOICE",
+      //   openChat: { color: "#ffffff", backgroundColor: "#123456" },
+      //   closeChat: { color: "#ffffff", backgroundColor: "#123456" },
+      // });
+      // amazon_connect(
+      //   "snippetId",
+      //   "QVFJREFIakNnb2I4UUFhMXdNbmZJdnEvYXJSclVQTEk0eUtlQjYvUkZmQ2Q5NU1hSWdGUnYvRmp3MGREZnp4R0V5UDVLVlFhQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNM2VQQzhVU3lJdys4RnhXYkFnRVFnQ3NWZ2ovOXZDZjEzcG9GbGI0NDVxNWd3Q0hqcmVIaHYrNEIyMUJUdzVMa1FBbXVycFRQQ1VBRCs5d0w6Om5wVmxZQmh3VFRlQjkzb1MrWkx1ZzFlMTMwUDhSZVYwRHZJbVBpdVVHWTBKVWYzZXd0aGREMWFQa2xaM2tNQWx2ZXpDOTFXMVhOaHRIeHZIbS9vV0JvMlFMdHBMb1JTMVRiZkJpNlptY0VLMDBQSkhBWTFvN1FCSGY1amV4MVVMd0dGMkdHUmFXcjZQTGVQSE5nT1FuNmlYd1AyOHB6az0="
+      // );
+      // amazon_connect("supportedMessagingContentTypes", [
+      //   "text/plain",
+      //   "text/markdown",
+      // ]);
       amazon_connect("customLaunchBehavior", {
         skipIconButtonAndAutoLaunch: true,
         alwaysHideWidgetButton: true,
       });
       amazon_connect("enableLogs", true);
-      amazon_connect("authenticate", function (callback) {
-        console.log('testtt')
-        callback('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZXhwIjoxNTE2MjQwMDAwLCJpYXQiOjE1MTYyMzkwMjJ9.0GSPwdC0D2pD0wIfV8utZ69vkG5QYsiRRWmrB8hL5XA');
+      amazon_connect("authenticate", function(callback) {
+        console.log("testtt");
+        callback(
+          "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiZWZmZDQ4Mi1lNTEzLTRiMmItYWFjNS1hYTY3ZTZjYTMzMTQiLCJhdHRyaWJ1dGVzIjp7InNlc3Npb25JZCI6IjAxMjM0NTY3Nzg5In0sImlhdCI6MTcxMjEyNDA2OCwiZXhwIjoxNzEyMTI0Njg1fQ.8HZeuYrSmEJKIHdt7KHSaOjEzOPCIgum805nGjxUodQ"
+        );
       });
     },
-    
+
     init() {
       const containerDiv = document.getElementById("container-div");
       const instanceURL = "https://valqua.my.connect.aws/ccp-v2/";
