@@ -15,7 +15,7 @@ export default {
   },
   mounted() {
     // initialize the streams api
-    this.init();
+    // this.init();
   },
   methods: {
     renderCallButton() {
@@ -54,7 +54,13 @@ export default {
         skipIconButtonAndAutoLaunch: true,
         alwaysHideWidgetButton: true,
       });
+      amazon_connect("enableLogs", true);
+      amazon_connect("authenticate", function (callback) {
+        console.log('testtt')
+        callback('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwiZXhwIjoxNTE2MjQwMDAwLCJpYXQiOjE1MTYyMzkwMjJ9.0GSPwdC0D2pD0wIfV8utZ69vkG5QYsiRRWmrB8hL5XA');
+      });
     },
+    
     init() {
       const containerDiv = document.getElementById("container-div");
       const instanceURL = "https://valqua.my.connect.aws/ccp-v2/";
